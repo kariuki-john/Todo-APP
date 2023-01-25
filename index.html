@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To Do</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body >
+    <table>
+        <tr>
+            <td>
+                
+                <form onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="Tittle">Tittle</label>
+                        <input type="text" name="tittle" id="Tittle" >
+                    </div>
+                    <div>
+                        <label for="description">Description</label>
+                        <input type="text" name="description" id="description" >
+                    </div>
+                    <div>
+                        <label for="StartDate">Start Date</label>
+                        <input type="text" name="startdate" id="startdate">
+                    </div>
+                    <div>
+                        <label for="enddate">End date</label>
+                        <input type="text" name="enddate" id="enddate">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Clear">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="TodoList">
+                    <thead>
+                        <tr>
+                            <th>Tittle</th>
+                            <th>Description</th>
+                            <th>StartDate</th>
+                            <th>EndDate</th>
+                            <th></th>
+                            <tr></tr>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                    <button id="deleteall" onclick="deletealltodos()">Delete All Todos</button>
+                </table>
+            </td>
+            
+        </tr>
+        
+    </table>
+
+    <table class="tasks" id="completedTodo">
+        <thead>
+            <tr>
+                <th>Tittle</th>
+                <th>Description</th>
+                <th>StartDate</th>
+                <th>EndDate</th>
+                <tr></tr>
+            </tr>
+        </thead>
+        <tbody>
+            
+        </tbody>
+    </table>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+
+</html>
